@@ -9,6 +9,13 @@ BROWN = (128,45,16)     #802D10
 C_1 = (79,199,137)      #4FC789
 C_2 = (73,131,199)      #4983C7
 
+#M
+MENU_OPTION = ('NEW GAME 1P',
+               'NEW GAME 2P - COOPERATIVE',
+               'NEW GAME 2P - COMPETITIVE',
+               'SCORE',
+               'EXIT')
+
 # W
 WIN_WIDTH = 860
 WIN_HEIGHT = 630

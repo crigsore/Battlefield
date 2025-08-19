@@ -3,9 +3,7 @@
 from pygame.font import Font
 import pygame.image
 from pygame import Surface, Rect
-
-from code.Const import WIN_WIDTH, YELLOW
-
+from code.Const import WIN_WIDTH, YELLOW, MENU_OPTION, WHITE
 
 class Menu:
     def __init__(self, window):
@@ -18,7 +16,11 @@ class Menu:
         pygame.mixer_music.play(-1)
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(text_size=90, text="BATTLEFIELD", text_color=YELLOW, text_center_pos=((WIN_WIDTH / 2), 120))
+            self.menu_text(text_size=120, text="BATTLEFIELD", text_color=YELLOW, text_center_pos=((WIN_WIDTH / 2), 120))
+
+            for i in range(len(MENU_OPTION)):
+                self.menu_text(text_size=40, text=MENU_OPTION[i], text_color=WHITE,text_center_pos=((WIN_WIDTH / 2), 320 + 60 * i))
+
             pygame.display.flip()
 
             # Check for all events
