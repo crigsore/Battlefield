@@ -46,7 +46,7 @@ class Menu:
                             menu_option -= 1
                         else:
                             menu_option = len(MENU_OPTION) - 1
-                    if event.type == pygame.K_RETURN: # ENTER
+                    if event.key == pygame.K_RETURN: # Enter
                         return MENU_OPTION[menu_option]
 
     def menu_text(self,text_size: int, text: str, text_color: tuple, text_center_pos: tuple):

@@ -9,6 +9,15 @@ BROWN = (128,45,16)     #802D10
 C_1 = (79,199,137)      #4FC789
 C_2 = (73,131,199)      #4983C7
 
+# E
+ENTITY_SPEED = {
+    'BG0': 2,
+    'BG1': 3,
+    'BG2': 4,
+    'BG3': 5,
+    'BG4': 6,
+}
+
 #M
 MENU_OPTION = ('NEW GAME 1P',
                'NEW GAME 2P - COOPERATIVE',
