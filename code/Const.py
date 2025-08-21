@@ -1,4 +1,8 @@
+
+import pygame
+
 # C
+
 BLACK = (0,0,0)         #000000
 WHITE = (255,255,255)   #FFFFFF
 BLUE = (35,12,230)      #200CE6
@@ -10,19 +14,24 @@ C_1 = (79,199,137)      #4FC789
 C_2 = (73,131,199)      #4983C7
 
 # E
+
+EVENT_ENEMY = pygame.USEREVENT + 1
 ENTITY_SPEED = {
     'BG0': 2,
     'BG1': 3,
     'BG2': 4,
     'BG3': 5,
     'BG4': 6,
+    'Player': 3,
+    'EnemyH1': 2,
+    'EnemyH2': 1,
 }
 
 #M
-MENU_OPTION = ('NEW GAME 1P',
-               'NEW GAME 2P - COOPERATIVE',
-               'NEW GAME 2P - COMPETITIVE',
-               'SCORE',
+MENU_OPTION = ('NEW GAME - EASY MODE',
+               'NEW GAME - HARD MODE',
+               'NEW GAME - HARD AND TOUGH MODE',
+               'ABOUT THE GAME AND SCORE',
                'EXIT')
 
 # W
