@@ -27,6 +27,18 @@ ENTITY_SPEED = {
     'EnemyH2': 1,
 }
 
+#H
+ENTITY_HEALTH = {
+    'BG0': 777,
+    'BG1': 777,
+    'BG2': 777,
+    'BG3': 777,
+    'BG4': 777,
+    'Player': 300,
+    'EnemyH1': 50,
+    'EnemyH2': 50,
+}
+
 #M
 MENU_OPTION = ('NEW GAME - EASY MODE',
                'NEW GAME - HARD MODE',
