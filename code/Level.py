@@ -42,7 +42,7 @@ class Level:
                      pygame.quit()
                      sys.exit()
                  if event.type == EVENT_ENEMY:
-                     choice = random.choice(('EnemyH1', 'EnemyH2'))
+                     choice = random.choice(('EnemyH1', 'EnemyH2', 'EnemyT11'))
                      self.entity_list.append(EntityFactory.get_entity(choice))
 
             # Printed text

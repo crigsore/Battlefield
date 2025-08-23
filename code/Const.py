@@ -25,10 +25,12 @@ ENTITY_SPEED = {
     'BG4': 6,
     'Player': 2,
     'DShoot': 3,
-    'EnemyH1': 2,
+    'EnemyH1': 1,
     'EnemyH2': 1,
+    'EnemyT11': 1,
     'EnemyH1Shot': 3,
     'EnemyH2Shot': 3,
+    'EnemyT11Shot': 3,
 }
 
 ENTITY_HEALTH = {
@@ -40,22 +42,25 @@ ENTITY_HEALTH = {
     'Player': 300,
     'EnemyH1': 50,
     'EnemyH2': 50,
+    'EnemyT11': 50,
     'DShoot': 1,
     'EnemyH1Shot': 1,
     'EnemyH2Shot': 1,
+    'EnemyT11Shot': 1,
 }
 
 ENTITY_SHOOT_DELAY = {
     'Player': 20,
-    'EnemyH1': 70,
-    'EnemyH2': 60,
+    'EnemyH1': 190,
+    'EnemyH2': 130,
+    'EnemyT11': 150,
 }
 
 #M
-MENU_OPTION = ('NEW GAME - EASY MODE',
-               'NEW GAME - HARD MODE',
-               'NEW GAME - HARD AND TOUGH MODE',
-               'ABOUT THE GAME AND SCORE',
+MENU_OPTION = ('                                   NEW GAME - EASY MODE',
+               '                                    NEW GAME - HARD MODE',
+               '                        ABOUT THE GAME',
+               '   SCORE',
                'EXIT')
 
 

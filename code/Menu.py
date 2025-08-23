@@ -19,15 +19,15 @@ class Menu:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(text_size=120, text="BATTLEFIELD", text_color=YELLOW,
-                           text_center_pos=((WIN_WIDTH / 2), 120))
+                           text_center_pos=((WIN_WIDTH / 2),100))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
                     self.menu_text(text_size=40, text=MENU_OPTION[i], text_color=YELLOW,
-                                   text_center_pos=((WIN_WIDTH / 2), 320 + 60 * i))
+                                   text_center_pos=((WIN_WIDTH - 650), 300 + 60 * i))
                 else:
                     self.menu_text(text_size=40, text=MENU_OPTION[i], text_color=WHITE,
-                                   text_center_pos=((WIN_WIDTH / 2), 320 + 60 * i))
+                                   text_center_pos=((WIN_WIDTH - 650), 300 + 60 * i))
             pygame.display.flip()
 
             # Check for all events
@@ -54,6 +54,5 @@ class Menu:
         text_surf: Surface = text_font.render(text, True, text_color).convert_alpha()
         text_rect: Rect = text_surf.get_rect(center=text_center_pos)
         self.window.blit(source=text_surf, dest=text_rect)
-
 
 
