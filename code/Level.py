@@ -7,6 +7,7 @@ from pygame import Surface, Rect
 from pygame.font import Font
 from code.Const import WHITE, WIN_HEIGHT, BLACK, EVENT_ENEMY
 from code.Enemy import Enemy
+from code.EnemyTank import EnemyTank
 from code.Entity import Entity
 from code.EntityFactory import EntityFactory
 from code.EntityMediator import EntityMediator
@@ -20,6 +21,7 @@ class Level:
         self.game_mode = game_mode
         self.entity_list: list[Entity] = []
         self.entity_list.extend(EntityFactory.get_entity('BG'))
+        self.entity_list.append(EntityFactory.get_entity('EnemyT11'))
         self.entity_list.append(EntityFactory.get_entity('Player'))
         self.timeout = 60000                                       # Level time (60 seconds)
         pygame.time.set_timer(EVENT_ENEMY, 2000)
@@ -33,7 +35,7 @@ class Level:
             for ent in self.entity_list:
                 self.window.blit(source=ent.surf, dest=ent.rect)
                 ent.move()
-                if isinstance(ent, (Player, Enemy)):
+                if isinstance(ent, (Player, Enemy, EnemyTank)):
                     shoot = ent.shoot()
                     if shoot is not None:
                         self.entity_list.append(shoot)
