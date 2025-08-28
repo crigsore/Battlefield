@@ -7,6 +7,7 @@ import pygame
 from code.Background import Background
 from code.Const import WIN_WIDTH, WIN_HEIGHT
 from code.Enemy import Enemy
+from code.EnemyTank import EnemyTank
 from code.Player import Player
 
 
@@ -28,4 +29,7 @@ class EntityFactory:
             case 'EnemyH2':
                 return Enemy('EnemyH2', (WIN_WIDTH + 10, random.randint(25, 470)))
             case 'EnemyT11':
-                return Enemy('EnemyT11', (WIN_WIDTH + 10, random.randint(510, 530)))
+                return EnemyTank('EnemyT11', (WIN_WIDTH  + 10,random.randint(530,550)))
+
+
+

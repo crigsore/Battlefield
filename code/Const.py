@@ -30,7 +30,7 @@ ENTITY_SPEED = {
     'EnemyT11': 1,
     'EnemyH1Shot': 3,
     'EnemyH2Shot': 3,
-    'EnemyT11Shot': 3,
+    'EnemyT11Shoot': 3,
 }
 
 ENTITY_HEALTH = {
@@ -46,14 +46,30 @@ ENTITY_HEALTH = {
     'DShoot': 1,
     'EnemyH1Shot': 1,
     'EnemyH2Shot': 1,
-    'EnemyT11Shot': 1,
+    'EnemyT11Shoot': 1,
+}
+
+ENTITY_DAMAGE = {
+    'BG0': 0,
+    'BG1': 0,
+    'BG2': 0,
+    'BG3': 0,
+    'BG4': 0,
+    'Player': 1,
+    'DShoot': 25,
+    'EnemyH1': 1,
+    'EnemyH2': 1,
+    'EnemyH1Shot': 20,
+    'EnemyH2Shot': 15,
+    'EnemyT11': 1,
+    'EnemyT11Shoot': 15,
 }
 
 ENTITY_SHOOT_DELAY = {
     'Player': 20,
     'EnemyH1': 190,
     'EnemyH2': 130,
-    'EnemyT11': 150,
+    'EnemyT11': 210,
 }
 
 #M
