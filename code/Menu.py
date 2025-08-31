@@ -18,16 +18,16 @@ class Menu:
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(text_size=120, text="BATTLEFIELD", text_color=YELLOW,
+            self.menu_text(text_size=100, text="BATTLEFIELD", text_color=YELLOW,
                            text_center_pos=((WIN_WIDTH / 2),100))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(text_size=40, text=MENU_OPTION[i], text_color=YELLOW,
-                                   text_center_pos=((WIN_WIDTH - 650), 300 + 60 * i))
+                    self.menu_text(text_size=23, text=MENU_OPTION[i], text_color=YELLOW,
+                                   text_center_pos=((WIN_WIDTH - 800), 300 + 50 * i))
                 else:
-                    self.menu_text(text_size=40, text=MENU_OPTION[i], text_color=WHITE,
-                                   text_center_pos=((WIN_WIDTH - 650), 300 + 60 * i))
+                    self.menu_text(text_size=23, text=MENU_OPTION[i], text_color=WHITE,
+                                   text_center_pos=((WIN_WIDTH - 800), 300 + 50 * i))
             pygame.display.flip()
 
             # Check for all events

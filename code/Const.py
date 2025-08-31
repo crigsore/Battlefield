@@ -73,10 +73,10 @@ ENTITY_SHOOT_DELAY = {
 }
 
 #M
-MENU_OPTION = ('                                   NEW GAME - EASY MODE',
-               '                                    NEW GAME - HARD MODE',
-               '                        ABOUT THE GAME',
-               '   SCORE',
+MENU_OPTION = ('               DEMO MODE',
+               '                                                                                             How to play - To move forwards press right key/',
+               '                                                                                                                                 To move backwards press left key/ To move upwards press up key/ ',
+               '                                                                 To move downwards press down key',
                'EXIT')
 
 
