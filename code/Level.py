@@ -23,7 +23,7 @@ class Level:
         self.entity_list.extend(EntityFactory.get_entity('BG'))
         self.entity_list.append(EntityFactory.get_entity('EnemyT11'))
         self.entity_list.append(EntityFactory.get_entity('Player'))
-        self.timeout = 60000                                       # Level time (60 seconds)
+        self.timeout = 00000                                       # Level time (60 seconds)
         pygame.time.set_timer(EVENT_ENEMY, 2000)
 
     def run(self):
@@ -48,7 +48,7 @@ class Level:
                      self.entity_list.append(EntityFactory.get_entity(choice))
 
             # Printed text
-            self.level_text(14, f'{self.name} - Timeout: {self.timeout / 1000 :.1f}s', BLACK, (10,5))
+            self.level_text(14, f'DEMO - Timeout: {self.timeout / 1000 :.1f}s', BLACK, (10,5))
             self.level_text(14, f'fps: {clock.get_fps():.0f}', BLACK, (10, WIN_HEIGHT - 35))
             self.level_text(14, f'entity: {len(self.entity_list)}', BLACK, (10, WIN_HEIGHT - 20))
             pygame.display.flip()
